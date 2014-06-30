@@ -1,0 +1,89 @@
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+@font-face {
+  font-family: 'Sansation-Bold';
+  src: url('Sansation-Bold.eot');
+  src: url('Sansation-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Sansation-Bold.woff') format('woff'),
+       url('Sansation-Bold.ttf') format('truetype'),
+       url('Sansation-Bold.svg#Sansation-Bold') format('svg');
+}
+
+.fontpro,.fontpro-35896 {
+  font-family: 'Sansation-Bold',sans-serif;
+}
+
+/*NAV-BAR*/
+
+.navbar {
+	border: none;
+    height: 80px;
+    background: -webkit-linear-gradient(left top, black , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, black, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, black , white); /* Standard syntax (must be last) */
+}
+
+button {
+	margin-left: 100px;
+
+}
+
+.logo {
+	width: 15%;
+	margin: 15px;
+}
+
+.btn-group {
+	float: right;
+	margin-right: 100px;
+}
+
+.main-content h1 {
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.dropdown-toggle {
+	width: 200%;
+	margin-top: 25px;
+	background-color: #197811;
+}
+
+.dropdown-menu h3, li, button {
+	text-align: center;
+	padding: 5px;
+}
+
+/*BODY*/
+
+.main-content h1 {
+	font-family: Sansation-Bold;
+	font-size: 50px;
+	color: #197811;
+}
+
+.gold_iphone {
+	width: 60%;
+	margin-left: 45%;
+	margin-top: 10%;
+}
+
+.gold_iphone_right {
+	width: 60%;
+	margin-right: 35%;
+	margin-top: 10%;
+}
+
+.iphone_5c {
+	width: 80%;
+	margin-left: 10%;
+}
+
+/*FOOTER*/
+
+footer {
+	text-align: center;
+}
