@@ -97,12 +97,14 @@ footer {
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 768px) {
+/*Deletes "Sign Up" button for phones*/
+@media (max-width: 668px) {
 	#signup {
 		display: none;
 	}
 }
 
+/*Deletes "Your Cards, Your Way, except for phone*/
 @media (min-width: 487px) {
 	#phonemotto {
 		display: none;
@@ -114,11 +116,16 @@ footer {
 	#desktopmotto {
 		font-size: 27px;
 	}
+	.iphone_5c {
+		display: none;
+	}
+
 }
 
+/*Phone app home screen*/
 @media (max-width: 486px) {
 	.logo {
-		width: 170px;
+		width: 160px;
 		margin-top: 11px;
 		margin-left: 10px;
 	}
@@ -137,6 +144,14 @@ footer {
 
 	#desktopmotto {
 		display: none;
+	}
+
+	.gold_iphone, .gold_iphone_right {
+		display: none;
+	}
+
+	#login {
+		width: 50px;
 	}
 }
 
