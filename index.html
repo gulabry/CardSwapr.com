@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- So users cannot zoom into page, feels more native -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>CardSwapr: Your Personal Gift Card Trading Center</title>
     <!-- Custom Overrides for CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -19,11 +20,11 @@
 
   <body>
 
-    <div class="navbar">
+    <div class="topbar">
       <!--LOGO-->
       <img class="logo" src="img/banner_white.png"> 
       <!-- DROPDOWN "LOGIN" -->
-      <div class="btn-group">
+      <div id="signup" class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Sign Up</button>
         <ul class="dropdown-menu" role="menu">
           <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
@@ -36,7 +37,7 @@
         </ul>
       </div>
 
-      <div class="btn-group">
+      <div id="login" class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Login</button>
         <ul class="dropdown-menu" role="menu">
           <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
@@ -49,7 +50,9 @@
     </div>
 
     <div class="main-content">
-      <h1>Your personal gift card trading center</h1>
+      <h1 id="desktopmotto">Your personal gift card trading center</h1>
+      <!-- This displays on phones only -->
+      <h1 id="phonemotto">Your Cards, Your Way</h1>
       <div class="row">
         <div class="col-md-4"><img class="gold_iphone" src="img/cardswapr3.0.png"></div>
         <div class="col-md-4"><img class="iphone_5c" src="img/green_iphone-5c.png"></div>

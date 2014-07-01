@@ -16,7 +16,7 @@
 
 /*NAV-BAR*/
 
-.navbar {
+.topbar {
 	border: none;
     height: 80px;
     background: -webkit-linear-gradient(left top, black , white); /* For Safari 5.1 to 6.0 */
@@ -30,9 +30,14 @@ button {
 
 }
 
+.dropdown-menu h3, li, button {
+	text-align: center;
+	padding: 5px;
+}
+
 .logo {
-	width: 15%;
-	margin: 15px;
+	width: 300px;
+	margin: 11px;
 }
 
 .btn-group {
@@ -40,7 +45,14 @@ button {
 	margin-right: 100px;
 }
 
-.main-content h1 {
+#desktopmotto {
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#phonemotto {
+	font-size: 35px;
 	text-align: center;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -50,11 +62,6 @@ button {
 	width: 200%;
 	margin-top: 25px;
 	background-color: #197811;
-}
-
-.dropdown-menu h3, li, button {
-	text-align: center;
-	padding: 5px;
 }
 
 /*BODY*/
@@ -87,3 +94,46 @@ button {
 footer {
 	text-align: center;
 }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+	#signup {
+		display: none;
+	}
+}
+
+@media (min-width: 487px) {
+	#phonemotto {
+		display: none;
+	}
+}
+
+/*So that we always have the motto on one line*/
+@media (max-width: 850px) {
+	#desktopmotto {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 486px) {
+	.logo {
+		width: 170px;
+		margin-top: 11px;
+		margin-left: 20px;
+	}
+
+	.topbar {
+		height: 55px;
+	}
+
+	.dropdown-toggle {
+		margin-top: 11px;
+	}
+
+	#desktopmotto {
+		display: none;
+	}
+}
+
+
