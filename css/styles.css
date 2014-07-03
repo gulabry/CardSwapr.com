@@ -101,7 +101,7 @@ footer {
 /*MEDIA QUERIES*/
 
 /*Deletes "Your Cards, Your Way, except for phone*/
-@media (max-width: 487px) {
+@media (max-width: 486px) {
 	body {
 		padding-top: 50px;
 	}
