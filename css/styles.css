@@ -1,17 +1,9 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-@font-face {
-  font-family: 'Sansation-Bold';
-  src: url('Sansation-Bold.eot');
-  src: url('Sansation-Bold.eot?#iefix') format('embedded-opentype'),
-       url('Sansation-Bold.woff') format('woff'),
-       url('Sansation-Bold.ttf') format('truetype'),
-       url('Sansation-Bold.svg#Sansation-Bold') format('svg');
-}
-
-.fontpro,.fontpro-35896 {
-  font-family: 'Sansation-Bold',sans-serif;
+@font-face { 
+	font-family: Sansation-Bold; 
+	src: url('Sansation-Bold.ttf'); 
 }
 
 /*NAV-BAR*/
@@ -47,8 +39,8 @@ button {
 
 #desktopmotto {
 	text-align: center;
-	margin-left: 10px;
-	margin-right: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #phonemotto {
@@ -66,61 +58,88 @@ button {
 
 /*BODY*/
 
-.main-content h1 {
+.container h1 {
 	font-family: Sansation-Bold;
 	font-size: 50px;
 	color: #197811;
 }
 
 .gold_iphone {
-	width: 60%;
-	margin-left: 45%;
+	width: 80%;
+	margin-left: 20%;
 	margin-top: 10%;
 }
 
 .gold_iphone_right {
-	width: 60%;
-	margin-right: 35%;
+	width: 80%;
+	margin-right: 15%;
 	margin-top: 10%;
 }
 
 .iphone_5c {
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
 }
 
 /*FOOTER*/
 
 footer {
 	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#footerline {
+	margin-top: 20px;
+	width: 100=%;
+	height: 1px;
+	background: black;
+
 }
 
 /*MEDIA QUERIES*/
 
-/*Deletes "Sign Up" button for phones*/
-@media (max-width: 668px) {
+/*Large phones, small, medium, and large tablets*/
+@media (min-width: 487px) and (max-width: 992px) {
+	.gold_iphone_right {
+		display: none;
+	}
+	.gold_iphone {
+		margin-top: 2%;
+		width: 71.5%;
+		margin-left: 28%;
+	}
+	.iphone_5c {
+		width: 80%;
+		margin-left: 3%;
+	}
+
+	#desktopmotto {
+		font-size: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}	
+	#phonemotto {
+		display: none;
+	}
+
 	#signup {
 		display: none;
 	}
 }
 
-/*Deletes "Your Cards, Your Way, except for phone*/
-@media (min-width: 487px) {
+@media (min-width: 993px) {
 	#phonemotto {
 		display: none;
 	}
 }
 
-/*So that we always have the motto on one line*/
-@media (max-width: 850px) {
+/*Deletes "Your Cards, Your Way, except for phone*/
+@media (max-width: 487px) {
+
 	#desktopmotto {
-		font-size: 27px;
+		display: none;
 	}
 
-}
-
-/*Phone app home screen*/
-@media (max-width: 486px) {
 	.logo {
 		width: 160px;
 		margin-top: 11px;
@@ -143,13 +162,27 @@ footer {
 		display: none;
 	}
 
-	.gold_iphone, .gold_iphone_right {
-		display: none;
-	}
-
 	#login {
 		width: 50px;
 	}
+
+	#signup {
+		display: none;
+	}
+
+	.gold_iphone_right, .gold_iphone {
+		display: none;
+	}
+
+	.iphone_5c {
+		width: 150%;
+		margin-left: 33%;
+	}
+
+	.leftphone {
+		display: none;
+	}
 }
+
 
 
