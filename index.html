@@ -17,39 +17,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
+    <nav class="navbar-fixed-top" role="navigation">
+        <div class="topbar">
+        <!--LOGO-->
+        <img class="logo" src="img/banner_white.png"> 
+        <!-- DROPDOWN "LOGIN" -->
+        <div id="signup" class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Sign Up</button>
+          <ul class="dropdown-menu" role="menu">
+            <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
+            <h3>Sign up!</h3>
+            <li><input type="text" class="form-control" placeholder="Email"></li>
+            <li><input type="text" class="form-control" placeholder="Username"></li>
+            <li><input type="text" class="form-control" placeholder="Password"></li>
+            <li><input type="text" class="form-control" placeholder="Confirm Password"></li>
+            <li><button>Sign Up</button></li>
+          </ul>
+        </div>
 
-    <div class="topbar">
-      <!--LOGO-->
-      <img class="logo" src="img/banner_white.png"> 
-      <!-- DROPDOWN "LOGIN" -->
-      <div id="signup" class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Sign Up</button>
-        <ul class="dropdown-menu" role="menu">
-          <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
-          <h3>Sign up!</h3>
-          <li><input type="text" class="form-control" placeholder="Email"></li>
-          <li><input type="text" class="form-control" placeholder="Username"></li>
-          <li><input type="text" class="form-control" placeholder="Password"></li>
-          <li><input type="text" class="form-control" placeholder="Confirm Password"></li>
-          <li><button>Sign Up</button></li>
-        </ul>
+        <div id="login" class="btn-group">
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Login</button>
+          <ul class="dropdown-menu" role="menu">
+            <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
+            <h3>Sign in!</h3>
+            <li><input type="text" class="form-control" placeholder="Username"></li>
+            <li><input type="text" class="form-control" placeholder="Password"></li>
+            <li><button>Login</button><button>Sign Up</button></li>
+          </ul>
+        </div>
       </div>
-
-      <div id="login" class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Login</button>
-        <ul class="dropdown-menu" role="menu">
-          <!-- This dropdown menu is closing upon clicking anywhere, I believe it has to do with the class changing upon click from btn-group TO btn-group open.....investigate alternatives -->
-          <h3>Sign in!</h3>
-          <li><input type="text" class="form-control" placeholder="Username"></li>
-          <li><input type="text" class="form-control" placeholder="Password"></li>
-          <li><button>Login</button><button>Sign Up</button></li>
-        </ul>
-      </div>
-    </div>
-
-
+    </nav>
 
     <div class="container">
       <!-- Desktop and tablet Motto -->
@@ -101,16 +99,9 @@
       </div>
     </div>
 
-
-
     <div id="footerline"></div>
     <footer>
-    
-
     CardSwapr, LLC. Copyright 2014. All Rights Reserved.
-
-
-
     </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

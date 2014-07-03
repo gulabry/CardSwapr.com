@@ -1,10 +1,5 @@
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans);
-
-@font-face { 
-	font-family: Sansation-Bold; 
-	src: url('Sansation-Bold.ttf'); 
-}
+@font-face { font-family: Sansation-Bold; src: url('../fonts/sansation/Sansation-Bold.ttf'); }
 
 /*NAV-BAR*/
 
@@ -15,11 +10,14 @@
     background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, black, black); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, black , white); /* Standard syntax (must be last) */
-}
+} 
 
 button {
 	margin-left: 100px;
+}
 
+h1, h2, h3 {
+	font-family: Sansation-Bold;
 }
 
 .dropdown-menu h3, li, button {
@@ -58,10 +56,14 @@ button {
 
 /*BODY*/
 
+body {
+	padding-top: 90px;
+}
+
 .container h1 {
-	font-family: Sansation-Bold;
 	font-size: 50px;
 	color: #197811;
+	padding-bottom: 20px;
 }
 
 .gold_iphone {
@@ -257,43 +259,14 @@ footer {
 
 /*MEDIA QUERIES*/
 
-/*Large phones, small, medium, and large tablets*/
-@media (min-width: 487px) and (max-width: 992px) {
-	.gold_iphone_right {
-		display: none;
-	}
-	.gold_iphone {
-		margin-top: 2%;
-		width: 71.5%;
-		margin-left: 28%;
-	}
-	.iphone_5c {
-		width: 80%;
-		margin-left: 3%;
-	}
-
-	#desktopmotto {
-		font-size: 40px;
-		margin-left: 5px;
-		margin-right: 5px;
-	}	
-	#phonemotto {
-		display: none;
-	}
-
-	#signup {
-		display: none;
-	}
-}
-
-@media (min-width: 993px) {
-	#phonemotto {
-		display: none;
-	}
-}
-
 /*Deletes "Your Cards, Your Way, except for phone*/
 @media (max-width: 487px) {
+	body {
+		padding-top: 50px;
+	}
+	#phonemotto {
+		padding-bottom: 0px;
+	}
 
 	#desktopmotto {
 		display: none;
@@ -339,6 +312,41 @@ footer {
 	}
 
 	.leftphone {
+		display: none;
+	}
+}
+
+/*Large phones, small, medium, and large tablets*/
+@media (min-width: 487px) and (max-width: 992px) {
+	.gold_iphone_right {
+		display: none;
+	}
+	.gold_iphone {
+		margin-top: 2%;
+		width: 71.5%;
+		margin-left: 28%;
+	}
+	.iphone_5c {
+		width: 80%;
+		margin-left: 3%;
+	}
+
+	#desktopmotto {
+		font-size: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}	
+	#phonemotto {
+		display: none;
+	}
+
+	#signup {
+		display: none;
+	}
+}
+
+@media (min-width: 993px) {
+	#phonemotto {
 		display: none;
 	}
 }
