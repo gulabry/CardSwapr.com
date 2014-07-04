@@ -82,6 +82,165 @@ body {
 	width: 100%;
 }
 
+/*ANIMATION INITIALIZING*/
+
+
+.container {
+	position: relative;
+}
+
+.left_animation {
+	margin-left: 27.5%;
+}
+
+.right_animation {
+	margin-left: 6%;
+}
+
+
+.animation {
+	margin-top: 34.5%;
+	margin-right: auto;
+	position: relative;
+	width: 76%;
+	height: 487px;
+	position: relative;
+	overflow: hidden;
+	border: 2px solid gray;
+	border-radius: 2px;
+	
+}
+
+.gold_iphone_right, .gold_iphone {
+	position: absolute;
+}
+
+.box, .view, .image, .phonepic {
+	max-width: 100%;
+}
+
+.box, .view {
+	position: absolute;
+}
+
+#greenbox, #picbox {
+	top: 29%;
+}
+
+#greenbox {
+	animation: gre 5s;
+	-webkit-animation: gre 5s ease-out; /* Chrome, Safari, Opera */
+}
+
+#picbox{
+	width: 269px;
+	animation: pic 5s;
+	-webkit-animation: pic 5s ease-out; /* Chrome, Safari, Opera */
+}
+
+#gapbox {
+	background-color: white;
+	top: 55%;
+	height: 30%;
+	animation: gap 5s;
+	-webkit-animation: gap 5s ease-out; /* Chrome, Safari, Opera */
+}
+
+#ambox{
+	left: -269px;
+	top: 30.5%;
+	animation: amazon 5s;
+	-webkit-animation: amazon 5s ease-out; /* Chrome, Safari, Opera */
+}
+
+#nordbox {
+	top: 30.5%;
+	animation: nordstrom 5s;
+	-webkit-animation: nordstrom 5s ease-out; /* Chrome, Safari, Opera */
+}
+
+#greenbox, #picbox, #gapbox, #ambox, #nordbox {
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+/*ANIMATION*/
+
+@keyframes nordstrom {
+	0% {top: 30.5%;}
+    20% {top: 30.5%;}
+    40% {top: 50%;}
+    100%{top:50%;}
+}
+
+@keyframes amazon {
+	0% {left: -269px;}
+    20% {left: -269px;}
+    40% {left: 0px;}
+    100%{left: 0px;}
+}
+
+@keyframes gre {
+    0% {left: -269px;}
+    20% {left: -269px;}
+    40% {left: 0px;}
+    100%{left: 0px;}
+}
+
+@keyframes pic {
+    0% {left: 0px;}
+    20% {left: 0px;}
+    40% {left: 269px;}
+    100%{left: 269px;}
+}
+
+@keyframes gap {
+	0% {top: 55%;}
+	40%{top:55%;}
+	60%{top:29%;}
+	100%{top:29%;}
+ }
+	
+/* ANIMATION FOR Chrome, Safari, Opera */
+
+@-webkit-keyframes nordstrom {
+	0% {top: 30.5%;}
+    20% {top: 30.5%;}
+    40% {top: 50%;}
+    100%{top:50%;}
+}
+
+@-webkit-keyframes amazon {
+	0% {left: -269px;}
+    20% {left: -269px;}
+    40% {left: 0px;}
+    100%{left: 0px;}
+}
+
+@-webkit-keyframes gre {
+    0% {left: -269px;}
+    20% {left: -269px;}
+    40% {left: 0px;}
+    100%{left: 0px;}
+}
+
+@-webkit-keyframes pic {
+    0% {left: 0px;}
+    20% {left: 0px;}
+    40% {left: 269px;}
+    100%{left: 269px;}
+}
+
+@-webkit-keyframes gap {
+	0% {top: 55%;}
+	40%{top:55%;}
+	60%{top:29%;}
+	100%{top:29%;}
+ }
+
+
 /*FOOTER*/
 
 footer {
