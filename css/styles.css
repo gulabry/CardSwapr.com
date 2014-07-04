@@ -68,11 +68,13 @@ body {
 
 .gold_iphone {
 	width: 80%;
-	margin-left: 20%;
+	margin-left: 15%;
+	margin-right: auto;
 	margin-top: 10%;
 }
 
 .gold_iphone_right {
+	margin-left: auto;
 	width: 80%;
 	margin-right: 15%;
 	margin-top: 10%;
@@ -84,13 +86,16 @@ body {
 
 /*ANIMATION INITIALIZING*/
 
+.col-xs-6, .col-xs-4 {
+	height: 100%;
+}
 
 .container {
 	position: relative;
 }
 
 .left_animation {
-	margin-left: 27.5%;
+	margin-left: 22%;
 }
 
 .right_animation {
@@ -106,9 +111,15 @@ body {
 	height: 487px;
 	position: relative;
 	overflow: hidden;
-	border: 2px solid gray;
-	border-radius: 2px;
 	
+}
+
+.middle_animation {
+	display: none;
+}
+
+.single_animation {
+	display: none;
 }
 
 .gold_iphone_right, .gold_iphone {
@@ -141,7 +152,7 @@ body {
 #gapbox {
 	background-color: white;
 	top: 55%;
-	height: 30%;
+	height: 27%;
 	animation: gap 5s;
 	-webkit-animation: gap 5s ease-out; /* Chrome, Safari, Opera */
 }
@@ -160,8 +171,8 @@ body {
 }
 
 #greenbox, #picbox, #gapbox, #ambox, #nordbox {
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: 5;
+	animation-iteration-count: 5;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 }
@@ -251,7 +262,7 @@ footer {
 
 #footerline {
 	margin-top: 20px;
-	width: 100=%;
+	width: 100%;
 	height: 1px;
 	background: black;
 
@@ -261,9 +272,34 @@ footer {
 
 /*Deletes "Your Cards, Your Way, except for phone*/
 @media (max-width: 487px) {
+
+	.animation {
+		margin-top: 46%;
+		width: 137%;
+		height: 435px;
+		margin-left: 60%;
+	}
+
+	.iphone_5c {
+		position: absolute;
+	}
+	.right_animation{
+		display: none;
+	}
+
+
+	.middle_animation {
+		display: none;
+	}
+
+	.single_animation {
+		display: block;
+	}
+
 	body {
 		padding-top: 50px;
 	}
+
 	#phonemotto {
 		padding-bottom: 0px;
 	}
@@ -309,6 +345,7 @@ footer {
 	.iphone_5c {
 		width: 150%;
 		margin-left: 33%;
+		margin-right: auto;
 	}
 
 	.leftphone {
@@ -318,6 +355,35 @@ footer {
 
 /*Large phones, small, medium, and large tablets*/
 @media (min-width: 487px) and (max-width: 992px) {
+
+	.middle_animation {
+		display: block;
+		margin-left: 14%;
+		margin-right: 17%;
+	}
+
+	.iphone_5c {
+		position: absolute;
+	}
+
+	.left_animation {
+		margin-left: 35.5%;
+	}
+
+	#gapbox {
+		height: 27%;
+	}
+
+	.animation {
+		margin-top: 23%;
+		width: 68.5%;
+		height: 418px;
+	}
+
+	.right_animation {
+		display: none;
+	}
+
 	.gold_iphone_right {
 		display: none;
 	}
