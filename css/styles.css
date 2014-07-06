@@ -1,5 +1,5 @@
 
-@font-face { font-family: Sansation-Bold; src: url('../fonts/sansation/Sansation-Bold.ttf'); }
+@font-face { font-family: Sansation-Bold; src: url('../fonts/Sansation-Bold.ttf'); }
 
 /*NAV-BAR*/
 
@@ -274,6 +274,7 @@ footer {
 /*MEDIA QUERIES*/
 
 /*Deletes "Your Cards, Your Way, except for phone*/
+
 @media (max-width: 487px) {
 
 	.col-xs-6 {
@@ -306,6 +307,10 @@ footer {
 	.middle_animation {
 		display: none;
 	}
+}
+
+
+@media (max-width: 487px) {
 
 	body {
 		padding-top: 50px;
@@ -359,7 +364,7 @@ footer {
 }
 
 /*Large phones, small, medium, and large tablets*/
-@media (min-width: 488px) and (max-width: 992px) {
+@media (min-width: 726px) and (max-width: 992px) {
 
 	.col-xs-6, .container {
 		height: 100% !important;
@@ -439,6 +444,10 @@ footer {
 
 @media (min-width: 489px) and (max-width: 725px) {
 
+	#phonemotto {
+		display: none;
+	}
+
 	.middle_animation, .left_animation {
 		margin-left: 0px;
 	}
@@ -479,6 +488,11 @@ footer {
 
 	.iphone_5c {
 		margin-left: 0px;
+		position: absolute;
+	}
+
+	#signup {
+		display: none;
 	}
 }
 
