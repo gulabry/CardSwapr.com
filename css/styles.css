@@ -1,5 +1,5 @@
 
-@font-face { font-family: Sansation-Bold; src: url('../fonts/Sansation-Bold.ttf'); }
+@font-face { font-family: Sansation-Bold; src: url('../fonts/sansation/Sansation-Bold.ttf'); }
 
 /*NAV-BAR*/
 
@@ -421,6 +421,7 @@ footer {
 		margin-left: 5px;
 		margin-right: 5px;
 	}	
+
 	#phonemotto {
 		display: none;
 	}
@@ -494,5 +495,11 @@ footer {
 	#signup {
 		display: none;
 	}
+
+	#desktopmotto {
+		font-size: 40px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}	
 }
 
