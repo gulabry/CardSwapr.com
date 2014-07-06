@@ -86,28 +86,31 @@ body {
 
 /*ANIMATION INITIALIZING*/
 
-.col-xs-6, .col-xs-4 {
+.col-xs-6, .col-md-4, .row {
 	height: 100%;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
+
 
 .container {
 	position: relative;
 }
 
 .left_animation {
-	margin-left: 22%;
+	margin-left: 20.5%;
 }
 
 .right_animation {
-	margin-left: 6%;
+	margin-left: 5.5%;
 }
 
 
 .animation {
-	margin-top: 34.5%;
+	margin-top: 32%;
 	margin-right: auto;
 	position: relative;
-	width: 76%;
+	width: 70%;
 	height: 487px;
 	position: relative;
 	overflow: hidden;
@@ -261,7 +264,7 @@ footer {
 }
 
 #footerline {
-	margin-top: 20px;
+	margin-top: 100px !important;
 	width: 100%;
 	height: 1px;
 	background: black;
@@ -273,27 +276,35 @@ footer {
 /*Deletes "Your Cards, Your Way, except for phone*/
 @media (max-width: 487px) {
 
-	.animation {
-		margin-top: 46%;
-		width: 137%;
-		height: 435px;
-		margin-left: 60%;
-	}
-
-	.iphone_5c {
-		position: absolute;
-	}
-	.right_animation{
-		display: none;
-	}
-
-
-	.middle_animation {
-		display: none;
+	.col-xs-6 {
+		width: 100% !important;
 	}
 
 	.single_animation {
 		display: block;
+		width: 235px;
+		height: 423px;
+		left: 28%;
+		margin-top: 88px;
+	}
+
+	.iphone_5c {
+		display: block;
+		left: 20%;
+	}
+
+	.iphone_5c {
+		position: absolute;
+		height: 600px;
+		width: 295px;
+	}
+
+	.right_animation{
+		display: none;
+	}
+
+	.middle_animation {
+		display: none;
 	}
 
 	body {
@@ -342,32 +353,37 @@ footer {
 		display: none;
 	}
 
-	.iphone_5c {
-		width: 150%;
-		margin-left: 33%;
-		margin-right: auto;
-	}
-
 	.leftphone {
 		display: none;
 	}
 }
 
 /*Large phones, small, medium, and large tablets*/
-@media (min-width: 487px) and (max-width: 992px) {
+@media (min-width: 488px) and (max-width: 992px) {
+
+	.col-xs-6, .container {
+		height: 100% !important;
+	}
 
 	.middle_animation {
 		display: block;
-		margin-left: 14%;
+		margin-left: 13%;
 		margin-right: 17%;
 	}
 
 	.iphone_5c {
 		position: absolute;
+		height: 578px;
+		width: 298px;
+	}
+
+	.gold_iphone {
+		height: 562px;
+		width: 266px;
 	}
 
 	.left_animation {
-		margin-left: 35.5%;
+		margin-left: 33%;
 	}
 
 	#gapbox {
@@ -375,9 +391,9 @@ footer {
 	}
 
 	.animation {
-		margin-top: 23%;
-		width: 68.5%;
-		height: 418px;
+		margin-top: 22%;
+		width: 235px;
+		height: 420px;
 	}
 
 	.right_animation {
@@ -389,11 +405,9 @@ footer {
 	}
 	.gold_iphone {
 		margin-top: 2%;
-		width: 71.5%;
 		margin-left: 28%;
 	}
 	.iphone_5c {
-		width: 80%;
 		margin-left: 3%;
 	}
 
@@ -417,5 +431,54 @@ footer {
 	}
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+	.animation {
+		height: 405px;
+	}
+}
 
+@media (min-width: 489px) and (max-width: 725px) {
+
+	.middle_animation, .left_animation {
+		margin-left: 0px;
+	}
+
+	.animation {
+		margin-top: 55px;
+		width: 168px;
+		height: 303px;
+	}
+
+	.iphone_5c {
+		height: 415px;
+		width: 214px;
+	}
+
+	.gold_iphone {
+		height: 400px;
+		width: 189px;
+	}
+
+	.middle_animation {
+		display: block;
+		left: 26px;
+	}
+
+	.left_animation {
+		left: 32%;
+	}
+
+	#gapbox {
+		height: 27%;
+	}
+
+	.gold_iphone {
+		margin-top: 2%;
+		margin-left: 28%;
+	}
+
+	.iphone_5c {
+		margin-left: 0px;
+	}
+}
 
