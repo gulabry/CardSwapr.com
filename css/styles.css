@@ -275,27 +275,35 @@ footer {
 
 /*Deletes "Your Cards, Your Way, except for phone*/
 
-@media (max-width: 487px) {
+@media (max-width: 542px) {
 
 	.col-xs-6 {
 		width: 100% !important;
+		position: relative;
 	}
 
 	.single_animation {
 		display: block;
 		width: 235px;
 		height: 423px;
-		left: 28%;
+		padding: left: 5px;
+		margin: auto;
 		margin-top: 88px;
 	}
 
 	.iphone_5c {
 		display: block;
-		left: 20%;
+	}
+
+	#center {
+		position: relative;
+		width: 295px;
+		margin: auto;
 	}
 
 	.iphone_5c {
 		position: absolute;
+		left: -4px;
 		height: 600px;
 		width: 295px;
 	}
@@ -307,10 +315,6 @@ footer {
 	.middle_animation {
 		display: none;
 	}
-}
-
-
-@media (max-width: 487px) {
 
 	body {
 		padding-top: 50px;
@@ -373,7 +377,7 @@ footer {
 	.middle_animation {
 		display: block;
 		margin-left: 13%;
-		margin-right: 17%;
+		
 	}
 
 	.iphone_5c {
@@ -386,10 +390,13 @@ footer {
 		height: 562px;
 		width: 266px;
 	}
-
+/*
 	.left_animation {
-		margin-left: 33%;
+		margin-left: 32%;
+		margin-right: 5%;
+		margin-left: auto;
 	}
+	*/
 
 	#gapbox {
 		height: 27%;
@@ -443,7 +450,7 @@ footer {
 	}
 }
 
-@media (min-width: 489px) and (max-width: 725px) {
+@media (min-width: 543px) and (max-width: 725px) {
 
 	#phonemotto {
 		display: none;
@@ -475,7 +482,7 @@ footer {
 	}
 
 	.left_animation {
-		left: 32%;
+		left: 31.5%;
 	}
 
 	#gapbox {
@@ -503,3 +510,23 @@ footer {
 	}	
 }
 
+
+@media (min-width: 771px) and (max-width: 992px) {
+	.left_animation {
+		margin-right: 5%;
+		margin-left: auto;
+	}
+}
+
+@media (min-width: 726px) and (max-width: 770px) {
+	.left_animation {
+		margin-right: auto;
+		margin-left: 33%;
+	}
+}
+
+@media (min-width: 993px) {
+	.right_animation {
+		display: none;
+	}
+}
