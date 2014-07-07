@@ -32,8 +32,9 @@ h1, h2, h3 {
 
 .btn-group {
 	float: right;
-	margin-right: 100px;
+	margin-right: 20px; /* not 100 */
 }
+
 
 #desktopmotto {
 	text-align: center;
@@ -49,10 +50,65 @@ h1, h2, h3 {
 }
 
 .dropdown-toggle {
-	width: 200%;
-	margin-top: 25px;
+	width: 150%;     /* not 200 */
+	margin-top: 20px; /* not 25 */
 	background-color: #197811;
 }
+
+/* style buttons top */
+
+.topbar button {
+	padding: 0;
+	font-size: 30px;
+	width: 150px;
+}
+
+#signup > button {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+
+#login > button {
+	background-color: #197811;
+	border-color: #197811;
+	color: white;
+}
+
+.dropdown-menu {
+	width: 270px;
+	left: -120px !important; /*login*/
+
+	background: -webkit-linear-gradient(left top, #197811 , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #197811, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #197811, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #197811 , white); /* Standard syntax (must be last) */
+}
+
+.dropdown-menu button {
+	background-color: transparent; /*IE compatible?*/
+	border: none;
+	color: white;
+	font-size: 20px;
+}
+
+.dropdown-logo {
+	width: 200px;
+	margin: 10px;
+	margin-left: 35px;
+}
+
+.btn-group li {
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+}
+
+.btn-group  .form-control {
+	text-align: center;
+	opacity: 0.8;
+}
+
 
 /*BODY*/
 
