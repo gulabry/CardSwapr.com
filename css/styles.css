@@ -98,6 +98,13 @@ h1, h2, h3 {
 	width: 200px;
 	margin: 10px;
 	margin-left: 35px;
+	margin-bottom: 35px;
+}
+
+.dropdown-login {
+	width: 80%;
+	margin: 5px;
+	margin-left: 25px;
 }
 
 .btn-group li {
@@ -400,12 +407,27 @@ footer {
 		margin-top: 11px;
 	}
 
+	.dropdown-menu {
+		width: 215px;
+	}
+
+	.dropdown-logo {
+		width: 160px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
+
 	#desktopmotto {
 		display: none;
 	}
 
 	#login {
 		width: 50px;
+	}
+
+	#login button {
+		font-size: 22px;
+		width: 95px;
 	}
 
 	#signup {
@@ -553,6 +575,7 @@ footer {
 	#signup {
 		display: none;
 	}
+
 
 	#desktopmotto {
 		font-size: 40px;
