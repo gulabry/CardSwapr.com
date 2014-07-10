@@ -5,11 +5,12 @@
 
 .topbar {
 	border: none;
-    height: 80px;
+    height: 70px;
+    opacity: .98;
     background: -webkit-linear-gradient(left top, black , white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, black, black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, black , white); /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom right, black , rgb(122,122,122)); /* Standard syntax (must be last) */
 } 
 
 button {
@@ -26,7 +27,7 @@ h1, h2, h3 {
 }
 
 .logo {
-	width: 300px;
+	width: 250px;
 	margin: 11px;
 }
 
@@ -51,7 +52,7 @@ h1, h2, h3 {
 
 .dropdown-toggle {
 	width: 150%;     /* not 200 */
-	margin-top: 20px; /* not 25 */
+	margin-top: 14px; /* not 25 */
 	background-color: #197811;
 }
 
@@ -82,7 +83,7 @@ h1, h2, h3 {
 	background: -webkit-linear-gradient(left top, #197811 , white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(bottom right, #197811, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, #197811, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #197811 , white); /* Standard syntax (must be last) */
+    background: linear-gradient(to bottom right, #197811 , rgb(80,186,85)); /* Standard syntax (must be last) */
 }
 
 .dropdown-menu button {
@@ -114,7 +115,7 @@ h1, h2, h3 {
 /*BODY*/
 
 body {
-	padding-top: 90px;
+	padding-top: 80px;
 }
 
 .container h1 {
