@@ -1,5 +1,15 @@
 
-@font-face { font-family: Sansation-Bold; src: url('../fonts/sansation/Sansation-Bold.ttf'); }
+@font-face {
+    font-family: 'sansationbold';
+    src: url('sansation-bold-webfont.eot');
+    src: url('sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sansation-bold-webfont.woff') format('woff'),
+         url('sansation-bold-webfont.ttf') format('truetype'),
+         url('sansation-bold-webfont.svg#sansationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /*NAV-BAR*/
 
@@ -18,7 +28,7 @@ button {
 }
 
 h1, h2, h3 {
-	font-family: Sansation-Bold;
+	font-family: sansationbold;
 }
 
 .dropdown-menu h3, li, button {
