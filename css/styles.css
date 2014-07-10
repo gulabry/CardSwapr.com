@@ -97,11 +97,11 @@ body {
 	position: relative;
 }
 
-.left_animation {
+.left_animation, #swapcenter {
 	margin-left: 20.5%;
 }
 
-.right_animation {
+.right_animation, #search {
 	margin-left: 5.5%;
 }
 
@@ -117,15 +117,11 @@ body {
 	
 }
 
-.middle_animation {
+.middle_animation, .single_animation {
 	display: none;
 }
 
-.single_animation {
-	display: none;
-}
-
-.gold_iphone_right, .gold_iphone {
+.gold_iphone_right, .gold_iphone, #search, #swapcenter {
 	position: absolute;
 }
 
@@ -139,6 +135,14 @@ body {
 
 #greenbox, #picbox {
 	top: 29%;
+}
+
+.endimage {
+	max-width: 100%;
+}
+
+#search_tab {
+	display: none;
 }
 
 #greenbox {
@@ -173,14 +177,27 @@ body {
 	-webkit-animation: nordstrom 5s ease-out; /* Chrome, Safari, Opera */
 }
 
+.right_animation, .left_animation, .single_animation, .middle_animation {
+	animation: fade 18s;
+	-webkit-animation: fade 18s;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
 #greenbox, #picbox, #gapbox, #ambox, #nordbox {
-	-webkit-animation-iteration-count: 5;
-	animation-iteration-count: 5;
+	-webkit-animation-iteration-count: 3;
+	animation-iteration-count: 3;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
 }
 
 /*ANIMATION*/
+
+@keyframes fade {
+	0% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
 
 @keyframes nordstrom {
 	0% {top: 30.5%;}
@@ -218,6 +235,12 @@ body {
  }
 	
 /* ANIMATION FOR Chrome, Safari, Opera */
+
+@-webkit-keyframes fade {
+	0% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
 
 @-webkit-keyframes nordstrom {
 	0% {top: 30.5%;}
@@ -288,7 +311,7 @@ footer {
 		height: 423px;
 		padding: left: 5px;
 		margin: auto;
-		margin-top: 88px;
+		margin-top: 89px;
 	}
 
 	.iphone_5c {
@@ -365,16 +388,19 @@ footer {
 	.leftphone {
 		display: none;
 	}
+	#search_tab, #search, #swapcenter {
+		display: none;
+	}
 }
 
 /*Large phones, small, medium, and large tablets*/
-@media (min-width: 726px) and (max-width: 992px) {
+@media (min-width: 726px) and (max-width: 991px) {
 
 	.col-xs-6, .container {
 		height: 100% !important;
 	}
 
-	.middle_animation {
+	.middle_animation, #search_tab {
 		display: block;
 		margin-left: 13%;
 		
@@ -436,9 +462,17 @@ footer {
 	#signup {
 		display: none;
 	}
+
+	#swapcenter, #search {
+		display: none;
+	}
+
+	#search_tab {
+		position: absolute;
+	}
 }
 
-@media (min-width: 993px) {
+@media (min-width: 991px) {
 	#phonemotto {
 		display: none;
 	}
@@ -476,7 +510,7 @@ footer {
 		width: 189px;
 	}
 
-	.middle_animation {
+	.middle_animation, #search_tab {
 		display: block;
 		left: 26px;
 	}
@@ -508,10 +542,18 @@ footer {
 		margin-left: 5px;
 		margin-right: 5px;
 	}	
+
+	#swapcenter, #search {
+		display: none;
+	}
+
+	#search_tab {
+		position: absolute;
+	}
 }
 
 
-@media (min-width: 771px) and (max-width: 992px) {
+@media (min-width: 771px) and (max-width: 991px) {
 	.left_animation {
 		margin-right: 5%;
 		margin-left: auto;
@@ -525,8 +567,8 @@ footer {
 	}
 }
 
-@media (min-width: 993px) {
+@media (min-width: 992px) {
 	.right_animation {
-		display: none;
+		display: block;
 	}
 }
