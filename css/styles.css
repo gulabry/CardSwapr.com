@@ -61,8 +61,8 @@ h1, h2, h3 {
 }
 
 .dropdown-toggle {
-	width: 150%;     /* not 200 */
-	margin-top: 14px; /* not 25 */
+	width: 150%;
+	margin-top: 14px; 
 	background-color: #197811;
 }
 
@@ -458,8 +458,8 @@ footer {
 		display: none;
 	}
 
-	#login {
-		width: 50px;
+	#login, #signup {
+		width: 40px;
 	}
 
 	#login button {
@@ -467,9 +467,11 @@ footer {
 		width: 95px;
 	}
 
-	#signup {
-		display: none;
+	#signup button {
+		font-size: 22px;
+		width: 95px;
 	}
+
 
 	.gold_iphone_right, .gold_iphone {
 		display: none;
@@ -549,10 +551,6 @@ footer {
 		display: none;
 	}
 
-	#signup {
-		display: none;
-	}
-
 	#swapcenter, #search {
 		display: none;
 	}
@@ -600,6 +598,10 @@ footer {
 		width: 189px;
 	}
 
+	.gold_iphone_right {
+		display: none;
+	}
+
 	.middle_animation, #search_tab {
 		display: block;
 		left: 26px;
@@ -607,6 +609,10 @@ footer {
 
 	.left_animation {
 		left: 31.5%;
+	}
+
+	.right_animation {
+		display: none;
 	}
 
 	#gapbox {
@@ -623,10 +629,6 @@ footer {
 		position: absolute;
 	}
 
-	#signup {
-		display: none;
-	}
-
 
 	#desktopmotto {
 		font-size: 40px;
@@ -641,8 +643,33 @@ footer {
 	#search_tab {
 		position: absolute;
 	}
+
+	#login, #signup {
+		width: 105px;
+	}
+
+	#login button, #signup button {
+		font-size: 27px;
+		width: 110px;
+		margin-top: 16px;
+	}
+
+	.dropdown-menu {
+		width: 230px;
+	}
+
+	.dropdown-logo {
+		width: 175px;
+		margin-left: 30px;
+		margin-bottom: 30px;
+	}
 }
 
+@media (min-width: 992px) {
+	.right_animation {
+		display: block;
+	}
+}
 
 @media (min-width: 771px) and (max-width: 991px) {
 	.left_animation {
@@ -658,8 +685,55 @@ footer {
 	}
 }
 
-@media (min-width: 992px) {
-	.right_animation {
-		display: block;
+@media screen and (max-width: 424px) {
+	#login, #signup {
+		width: 15px;
+	}
+
+	#login button, #signup button {
+		font-size: 18px;
+		width: 75px;
+		margin-top: 16px;
+	}
+
+	.dropdown-menu {
+		width: 196px;
+	}
+
+	.dropdown-logo {
+		width: 145px;
+		margin-bottom: 25px;
 	}
 }
+
+
+@media screen and (max-width: 355px) {
+		
+	.logo {
+		width: 135px;
+		margin-top: 16px;
+	}
+
+	#login, #signup {
+		width: 5px;
+	}
+
+	#login button, #signup button {
+		font-size: 16px;
+		width: 70px;
+	}
+
+	.dropdown-menu {
+		width: 191px;
+	}
+
+	.dropdown-logo {
+		width: 145px;
+		margin-bottom: 25px;
+	}
+
+	.dropdown-login {
+		margin-left: 20px;
+	}
+}
+
