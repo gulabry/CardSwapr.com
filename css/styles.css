@@ -1,16 +1,3 @@
-
-@font-face {
-    font-family: 'sansationbold';
-    src: url('sansation-bold-webfont.eot');
-    src: url('sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('sansation-bold-webfont.woff') format('woff'),
-         url('sansation-bold-webfont.ttf') format('truetype'),
-         url('sansation-bold-webfont.svg#sansationbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 /*NAV-BAR*/
 
 .topbar {
@@ -21,6 +8,15 @@
     background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(bottom right, black, black); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to bottom right, black , rgb(122,122,122)); /* Standard syntax (must be last) */
+} 
+
+body {
+	border: none;
+	height: 100%;
+	background: -webkit-linear-gradient(left top, #197811 , white); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #197811, white); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #197811, white); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #197811 , rgb(80,186,85)); /* Standard syntax (must be last) */
 } 
 
 button {
@@ -37,7 +33,7 @@ h1, h2, h3 {
 }
 
 .logo {
-	width: 250px;
+	width: 50px;
 	margin: 11px;
 }
 
@@ -48,6 +44,8 @@ h1, h2, h3 {
 
 
 #desktopmotto {
+	font-family: sans-serif;
+	color: white;
 	text-align: center;
 	margin-left: 5px;
 	margin-right: 5px;
@@ -111,6 +109,8 @@ h1, h2, h3 {
 	margin-bottom: 35px;
 }
 
+
+
 .dropdown-login {
 	width: 80%;
 	margin: 5px;
@@ -135,263 +135,75 @@ body {
 	padding-top: 80px;
 }
 
-.container h1 {
-	font-size: 50px;
-	color: #197811;
-	padding-bottom: 20px;
-}
-
-.gold_iphone {
-	width: 80%;
-	margin-left: 15%;
-	margin-right: auto;
-	margin-top: 10%;
-}
-
-.gold_iphone_right {
-	margin-left: auto;
-	width: 80%;
-	margin-right: 15%;
-	margin-top: 10%;
+#desktopmotto {
+	padding-bottom: 10px;
 }
 
 .iphone_5c {
-	width: 100%;
+	width: 350px;
+	margin-left: 45%;
 }
 
-/*ANIMATION INITIALIZING*/
+.iphone_gold {
+	width: 210px;
 
-.col-xs-6, .col-md-4, .row {
-	height: 100%;
-	padding-left: 0px !important;
-	padding-right: 0px !important;
+margin-top: 10px;}
+
+.name {
+	width: 52%;
+	margin-left: 23%;
+	padding-top: 25px;
+	padding-bottom: 15px;
 }
 
-
-.container {
-	position: relative;
+.lead {
+	text-align: center;
+	color: white;
+	font-size: 50px;
 }
-
-.left_animation, #swapcenter {
-	margin-left: 20.5%;
-}
-
-.right_animation, #search {
-	margin-left: 5.5%;
-}
-
-
-.animation {
-	margin-top: 32%;
-	margin-right: auto;
-	position: relative;
-	width: 70%;
-	height: 487px;
-	position: relative;
-	overflow: hidden;
-	
-}
-
-.middle_animation, .single_animation {
-	display: none;
-}
-
-.gold_iphone_right, .gold_iphone, #search, #swapcenter {
-	position: absolute;
-}
-
-.box, .view, .image, .phonepic {
-	max-width: 100%;
-}
-
-.box, .view {
-	position: absolute;
-}
-
-#greenbox, #picbox {
-	top: 29%;
-}
-
-.endimage {
-	max-width: 100%;
-}
-
-#search_tab {
-	display: none;
-}
-
-#greenbox {
-	animation: gre 5s;
-	-webkit-animation: gre 5s ease-out; /* Chrome, Safari, Opera */
-}
-
-#picbox{
-	width: 269px;
-	animation: pic 5s;
-	-webkit-animation: pic 5s ease-out; /* Chrome, Safari, Opera */
-}
-
-#gapbox {
-	background-color: white;
-	top: 55%;
-	height: 27%;
-	animation: gap 5s;
-	-webkit-animation: gap 5s ease-out; /* Chrome, Safari, Opera */
-}
-
-#ambox{
-	left: -269px;
-	top: 30.5%;
-	animation: amazon 5s;
-	-webkit-animation: amazon 5s ease-out; /* Chrome, Safari, Opera */
-}
-
-#nordbox {
-	top: 30.5%;
-	animation: nordstrom 5s;
-	-webkit-animation: nordstrom 5s ease-out; /* Chrome, Safari, Opera */
-}
-
-.right_animation, .left_animation, .single_animation, .middle_animation {
-	animation: fade 18s;
-	-webkit-animation: fade 18s;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-}
-
-#greenbox, #picbox, #gapbox, #ambox, #nordbox {
-	-webkit-animation-iteration-count: 3;
-	animation-iteration-count: 3;
-	animation-fill-mode: forwards;
-	-webkit-animation-fill-mode: forwards;
-}
-
-/*ANIMATION*/
-
-@keyframes fade {
-	0% {opacity: 1;}
-	90% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@keyframes nordstrom {
-	0% {top: 30.5%;}
-    20% {top: 30.5%;}
-    40% {top: 50%;}
-    100%{top:50%;}
-}
-
-@keyframes amazon {
-	0% {left: -269px;}
-    20% {left: -269px;}
-    40% {left: 0px;}
-    100%{left: 0px;}
-}
-
-@keyframes gre {
-    0% {left: -269px;}
-    20% {left: -269px;}
-    40% {left: 0px;}
-    100%{left: 0px;}
-}
-
-@keyframes pic {
-    0% {left: 0px;}
-    20% {left: 0px;}
-    40% {left: 269px;}
-    100%{left: 269px;}
-}
-
-@keyframes gap {
-	0% {top: 55%;}
-	40%{top:55%;}
-	60%{top:29%;}
-	100%{top:29%;}
- }
-	
-/* ANIMATION FOR Chrome, Safari, Opera */
-
-@-webkit-keyframes fade {
-	0% {opacity: 1;}
-	90% {opacity: 1;}
-	100% {opacity: 0;}
-}
-
-@-webkit-keyframes nordstrom {
-	0% {top: 30.5%;}
-    20% {top: 30.5%;}
-    40% {top: 50%;}
-    100%{top:50%;}
-}
-
-@-webkit-keyframes amazon {
-	0% {left: -269px;}
-    20% {left: -269px;}
-    40% {left: 0px;}
-    100%{left: 0px;}
-}
-
-@-webkit-keyframes gre {
-    0% {left: -269px;}
-    20% {left: -269px;}
-    40% {left: 0px;}
-    100%{left: 0px;}
-}
-
-@-webkit-keyframes pic {
-    0% {left: 0px;}
-    20% {left: 0px;}
-    40% {left: 269px;}
-    100%{left: 269px;}
-}
-
-@-webkit-keyframes gap {
-	0% {top: 55%;}
-	40%{top:55%;}
-	60%{top:29%;}
-	100%{top:29%;}
- }
-
 
 /*FOOTER*/
 
 footer {
+	color: white;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
 
-#footerline {
-	margin-top: 100px !important;
-	width: 100%;
-	height: 1px;
-	background: black;
-
-}
 
 /*MEDIA QUERIES*/
 
 /*Deletes "Your Cards, Your Way, except for phone*/
 
-@media (max-width: 542px) {
-
-	.col-xs-6 {
-		width: 100% !important;
-		position: relative;
+@media (max-width: 915px) {
+	.iphone_gold {
+		display: none;
 	}
 
-	.single_animation {
-		display: block;
-		width: 235px;
-		height: 423px;
-		padding: left: 5px;
-		margin: auto;
-		margin-top: 89px;
+	#ipad {
+		margin-left: 10%;
 	}
 
+}
+
+@media (max-width: 1200px) {
 	.iphone_5c {
-		display: block;
+		margin-left: 35%;
+		margin-top: 0px;
 	}
+}
+
+@media (max-width: 992px) {
+	.iphone_5c {
+		margin-left: 15%;
+		margin-top: 0px;
+	}
+}
+
+
+
+@media (max-width: 542px) {
 
 	#center {
 		position: relative;
@@ -399,37 +211,27 @@ footer {
 		margin: auto;
 	}
 
-	.iphone_5c {
-		position: absolute;
-		left: -4px;
-		height: 600px;
-		width: 295px;
-	}
-
-	.right_animation{
-		display: none;
-	}
-
-	.middle_animation {
-		display: none;
+	#ipad {
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
 	}
 
 	body {
 		padding-top: 50px;
 	}
 
+	.logo {
+		width: 35px;
+	}
+
 	#phonemotto {
+		color: white;
 		padding-bottom: 0px;
 	}
 
 	#desktopmotto {
 		display: none;
-	}
-
-	.logo {
-		width: 160px;
-		margin-top: 11px;
-		margin-left: 10px;
 	}
 
 	.btn-group {
@@ -473,73 +275,10 @@ footer {
 	}
 
 
-	.gold_iphone_right, .gold_iphone {
-		display: none;
-	}
-
-	.leftphone {
-		display: none;
-	}
-	#search_tab, #search, #swapcenter {
-		display: none;
-	}
 }
 
 /*Large phones, small, medium, and large tablets*/
 @media (min-width: 726px) and (max-width: 991px) {
-
-	.col-xs-6, .container {
-		height: 100% !important;
-	}
-
-	.middle_animation, #search_tab {
-		display: block;
-		margin-left: 13%;
-		
-	}
-
-	.iphone_5c {
-		position: absolute;
-		height: 578px;
-		width: 298px;
-	}
-
-	.gold_iphone {
-		height: 562px;
-		width: 266px;
-	}
-/*
-	.left_animation {
-		margin-left: 32%;
-		margin-right: 5%;
-		margin-left: auto;
-	}
-	*/
-
-	#gapbox {
-		height: 27%;
-	}
-
-	.animation {
-		margin-top: 22%;
-		width: 235px;
-		height: 420px;
-	}
-
-	.right_animation {
-		display: none;
-	}
-
-	.gold_iphone_right {
-		display: none;
-	}
-	.gold_iphone {
-		margin-top: 2%;
-		margin-left: 28%;
-	}
-	.iphone_5c {
-		margin-left: 3%;
-	}
 
 	#desktopmotto {
 		font-size: 40px;
@@ -566,69 +305,11 @@ footer {
 	}
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-	.animation {
-		height: 405px;
-	}
-}
-
 @media (min-width: 543px) and (max-width: 725px) {
 
 	#phonemotto {
 		display: none;
 	}
-
-	.middle_animation, .left_animation {
-		margin-left: 0px;
-	}
-
-	.animation {
-		margin-top: 55px;
-		width: 168px;
-		height: 303px;
-	}
-
-	.iphone_5c {
-		height: 415px;
-		width: 214px;
-	}
-
-	.gold_iphone {
-		height: 400px;
-		width: 189px;
-	}
-
-	.gold_iphone_right {
-		display: none;
-	}
-
-	.middle_animation, #search_tab {
-		display: block;
-		left: 26px;
-	}
-
-	.left_animation {
-		left: 31.5%;
-	}
-
-	.right_animation {
-		display: none;
-	}
-
-	#gapbox {
-		height: 27%;
-	}
-
-	.gold_iphone {
-		margin-top: 2%;
-		margin-left: 28%;
-	}
-
-	.iphone_5c {
-		margin-left: 0px;
-		position: absolute;
-	}
-
 
 	#desktopmotto {
 		font-size: 40px;
@@ -662,26 +343,6 @@ footer {
 		width: 175px;
 		margin-left: 30px;
 		margin-bottom: 30px;
-	}
-}
-
-@media (min-width: 992px) {
-	.right_animation {
-		display: block;
-	}
-}
-
-@media (min-width: 771px) and (max-width: 991px) {
-	.left_animation {
-		margin-right: 5%;
-		margin-left: auto;
-	}
-}
-
-@media (min-width: 726px) and (max-width: 770px) {
-	.left_animation {
-		margin-right: auto;
-		margin-left: 33%;
 	}
 }
 
