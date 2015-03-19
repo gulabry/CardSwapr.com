@@ -1,4 +1,5 @@
-CardSwapr_3.0
+Your Cards
+Your Way
 =============
 
-This is the informational website and future web application site for CardSwapr, your personal gift card trading center.
+CardSwapr's Web App and Front Facing Site
