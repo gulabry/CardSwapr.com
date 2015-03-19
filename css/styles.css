@@ -1,30 +1,28 @@
-/*NAV-BAR*/
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,900);
 
+/*NAV-BAR*/
 .topbar {
 	border: none;
-    height: 50px;
-    opacity: .98;
-    background: -webkit-linear-gradient(left top, black , white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, black, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, black, black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, black , rgb(122,122,122)); /* Standard syntax (must be last) */
+    height: 35px;
+    opacity: .95;
+    background: black;
 } 
 
 body {
 	border: none;
-	height: 100%;
-	background: -webkit-linear-gradient(left top, #197811 , white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #197811, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #197811, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #197811 , rgb(80,186,85)); /* Standard syntax (must be last) */
+
+	height: 25%;
+	background: -webkit-linear-gradient(left top, #11472d , #31856b); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #11472d, #31856b); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #11472d, #31856b ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #11472d , #31856b); /* Standard syntax (must be last) */
+    background-repeat: repeat-y;
+
 } 
 
-button {
-	margin-left: 100px;
-}
-
 h1, h2, h3 {
-	font-family: sansationbold;
+	font-family: 'Lato';
 }
 
 .dropdown-menu h3, li, button {
@@ -33,8 +31,8 @@ h1, h2, h3 {
 }
 
 .logo {
-	width: 50px;
-	margin: 11px;
+	width: 25px;
+	margin: 5px;
 }
 
 .btn-group {
@@ -64,70 +62,6 @@ h1, h2, h3 {
 	background-color: #197811;
 }
 
-/* style buttons top */
-
-.topbar button {
-	padding: 0;
-	font-size: 30px;
-	width: 150px;
-}
-
-#signup > button {
-	background-color: black;
-	border-color: black;
-	color: white;
-}
-
-#login > button {
-	background-color: #197811;
-	border-color: #197811;
-	color: white;
-}
-
-.dropdown-menu {
-	width: 270px;
-	left: -120px !important; /*login*/
-
-	background: -webkit-linear-gradient(left top, #197811 , white); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #197811, white); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #197811, white); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #197811 , rgb(80,186,85)); /* Standard syntax (must be last) */
-}
-
-.dropdown-menu button {
-	background-color: transparent; /*IE compatible?*/
-	border: none;
-	outline: none;
-	color: white;
-	font-size: 20px;
-}
-
-.dropdown-logo {
-	width: 200px;
-	margin: 10px;
-	margin-left: 35px;
-	margin-bottom: 35px;
-}
-
-
-
-.dropdown-login {
-	width: 80%;
-	margin: 5px;
-	margin-left: 25px;
-}
-
-.btn-group li {
-	margin-left: auto;
-	margin-right: auto;
-	width: 85%;
-}
-
-.btn-group  .form-control {
-	text-align: center;
-	opacity: 0.8;
-}
-
 
 /*BODY*/
 
@@ -135,26 +69,6 @@ body {
 	padding-top: 80px;
 }
 
-#desktopmotto {
-	padding-bottom: 10px;
-}
-
-.iphone_5c {
-	width: 350px;
-	margin-left: 45%;
-}
-
-.iphone_gold {
-	width: 210px;
-
-margin-top: 10px;}
-
-.name {
-	width: 52%;
-	margin-left: 23%;
-	padding-top: 25px;
-	padding-bottom: 15px;
-}
 
 .lead {
 	text-align: center;
