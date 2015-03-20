@@ -2,71 +2,66 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,900);
 
 /*NAV-BAR*/
-.topbar {
+nav {
 	border: none;
-    height: 35px;
+    height: 40px;
     opacity: .95;
     background: black;
+    position: fixed;
 } 
 
-body {
-	border: none;
-
-	height: 25%;
-	background: -webkit-linear-gradient(left top, #11472d , #31856b); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #11472d, #31856b); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #11472d, #31856b ); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #11472d , #31856b); /* Standard syntax (must be last) */
-    background-repeat: repeat-y;
-
-} 
-
-h1, h2, h3 {
+nav p {
 	font-family: 'Lato';
+	display: inline-block;
+	float: right;
+	margin: 4px 14px 0 0;
+	color: white;
+	font-size: 20px;
 }
 
-.dropdown-menu h3, li, button {
-	text-align: center;
-	padding: 5px;
+.container.full {
+	padding-right: 0px;
+	padding-left: 0px;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+
 }
 
 .logo {
-	width: 25px;
-	margin: 5px;
+	width: 28px;
+	margin: 6px;
 }
-
-.btn-group {
-	float: right;
-	margin-right: 20px; /* not 100 */
-}
-
-
-#desktopmotto {
-	font-family: sans-serif;
-	color: white;
-	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-#phonemotto {
-	font-size: 35px;
-	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.dropdown-toggle {
-	width: 150%;
-	margin-top: 14px; 
-	background-color: #197811;
-}
-
 
 /*BODY*/
 
 body {
-	padding-top: 80px;
+	border: none;
+	padding-top: 35px;
+	font-family: 'Lato';
+}
+
+.pattern {
+	background: -webkit-linear-gradient(left top, #206C55 , #52B29D); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #206C55, #52B29D); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #206C55, #52B29D ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #206C55 , #52B29D); /* Standard syntax (must be last) */
+}
+
+
+.name {
+	width: 20%;
+}
+
+.title h1 {
+	font-family: 'Lato';
+	color: white;
+	font-weight: 900;
+	font-size: 100px;
+}
+
+.4th h1 {
+	margin-bottom: 15px;
 }
 
 
@@ -79,7 +74,7 @@ body {
 /*FOOTER*/
 
 footer {
-	color: white;
+	color: black;
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -88,241 +83,29 @@ footer {
 
 /*MEDIA QUERIES*/
 
-/*Deletes "Your Cards, Your Way, except for phone*/
-
-@media (max-width: 915px) {
-	.iphone_gold {
-		display: none;
-	}
-
-	#ipad {
-		margin-left: 10%;
-	}
-
-}
-
-@media (max-width: 1200px) {
-	.iphone_5c {
-		margin-left: 35%;
-		margin-top: 0px;
+@media (min-width: 1200px) {
+	.container.full {
+		width: 100%;
 	}
 }
 
-@media (max-width: 992px) {
-	.iphone_5c {
-		margin-left: 15%;
-		margin-top: 0px;
+@media (min-width: 992px) {
+	.container.full {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container.full {
+		width: 100%;
 	}
 }
 
 
 
-@media (max-width: 542px) {
-
-	#center {
-		position: relative;
-		width: 295px;
-		margin: auto;
-	}
-
-	#ipad {
-		display: block;
-		margin-left: auto;
-		margin-right: auto; 
-	}
-
-	body {
-		padding-top: 50px;
-	}
-
-	.logo {
-		width: 35px;
-	}
-
-	#phonemotto {
-		color: white;
-		padding-bottom: 0px;
-	}
-
-	#desktopmotto {
-		display: none;
-	}
-
-	.btn-group {
-		margin-right: 70px;
-	}
-
-	.topbar {
-		height: 55px;
-	}
-
-	.dropdown-toggle {
-		margin-top: 11px;
-	}
-
-	.dropdown-menu {
-		width: 215px;
-	}
-
-	.dropdown-logo {
-		width: 160px;
-		margin-left: 30px;
-		margin-bottom: 30px;
-	}
-
-	#desktopmotto {
-		display: none;
-	}
-
-	#login, #signup {
-		width: 40px;
-	}
-
-	#login button {
-		font-size: 22px;
-		width: 95px;
-	}
-
-	#signup button {
-		font-size: 22px;
-		width: 95px;
-	}
 
 
-}
-
-/*Large phones, small, medium, and large tablets*/
-@media (min-width: 726px) and (max-width: 991px) {
-
-	#desktopmotto {
-		font-size: 40px;
-		margin-left: 5px;
-		margin-right: 5px;
-	}	
-
-	#phonemotto {
-		display: none;
-	}
-
-	#swapcenter, #search {
-		display: none;
-	}
-
-	#search_tab {
-		position: absolute;
-	}
-}
-
-@media (min-width: 991px) {
-	#phonemotto {
-		display: none;
-	}
-}
-
-@media (min-width: 543px) and (max-width: 725px) {
-
-	#phonemotto {
-		display: none;
-	}
-
-	#desktopmotto {
-		font-size: 40px;
-		margin-left: 5px;
-		margin-right: 5px;
-	}	
-
-	#swapcenter, #search {
-		display: none;
-	}
-
-	#search_tab {
-		position: absolute;
-	}
-
-	#login, #signup {
-		width: 105px;
-	}
-
-	#login button, #signup button {
-		font-size: 27px;
-		width: 110px;
-		margin-top: 16px;
-	}
-
-	.dropdown-menu {
-		width: 230px;
-	}
-
-	.dropdown-logo {
-		width: 175px;
-		margin-left: 30px;
-		margin-bottom: 30px;
-	}
-
-	#ipad {
-		display: inline-block;
-		padding-left: 0px;
-		margin-left: 10%;
-	}
-}
-
-@media screen and (max-width: 424px) {
-	#login, #signup {
-		width: 15px;
-	}
-
-	#login button, #signup button {
-		font-size: 18px;
-		width: 75px;
-		margin-top: 16px;
-	}
-
-	.dropdown-menu {
-		width: 196px;
-	}
-
-	.dropdown-logo {
-		width: 145px;
-		margin-bottom: 25px;
-	}
-
-	#ipad {
-		display: inline-block;
-		padding-left: 0px;
-		margin-left: 10%;
-	}
-}
 
 
-@media screen and (max-width: 355px) {
-		
-	.logo {
-		width: 40px;
-		margin-top: 8px;
-	}
 
-	#login, #signup {
-		width: 5px;
-	}
-
-	#login button, #signup button {
-		font-size: 16px;
-		width: 70px;
-	}
-
-	.dropdown-menu {
-		width: 191px;
-	}
-
-	.dropdown-logo {
-		width: 145px;
-		margin-bottom: 25px;
-	}
-
-	.dropdown-login {
-		margin-left: 20px;
-	}
-
-
-}
 
